@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main { background-color: rgb(87, 156, 156); padding: 1rem;}
+        label {display: block;margin: 0%;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1> FORMULARIO </h1>
+    </header>
+    <main>
+    <form action="">
+        <label for="inname">*NOMBRE:
+            <input type="text" name="inname" id="inname">
+        </label>
+
+        <label for="inlastname"> *APELLIDO:
+            <input type="text" name="inlastname" id="inlastname">
+        </label>
+
+        <label for="inaddres"> DIRECCION:
+            <input type="text" name="inaddres" id="inaddres">
+        </label>
+        
+        <label for="inphone"> CELULAR:
+            <input type="text" name="inphone" id="inphone" placeholder="+57 3122948045">
+        </label>
+        <label for="inemail"> EMAIL:
+            <input type="email" name="inemail" id="inemail" placeholder="alexa@gmail.com">
+        </label>
+
+        <label for="ingenere"> SEXO:
+            <input type="radio" name="genere" id="ingenere" value="masculino"> Masculino
+            <input type="radio" name="genere" id="ingenere" value="femenino"> Femenino
+            <input type="radio" name="genere" id="ingenere" value="NS"> No sabe 
+        </label>
+
+         <label for="inenterinment"> PASATIEMPO:
+            <input type="checkbox" name="inenterinment" id="inenterinment" value="instrumento">Intrumento
+            <input type="checkbox" name="inenterinment" id="inenterinment" value="baile">Baile
+            <input type="checkbox" name="inenterinment" id="inenterinment" value="sing">Cantar
+            <input type="checkbox" name="inenterinment" id="inenterinment" value="cooking">Cocinar
+            <input type="checkbox" name="inenterinment" id="inenterinment" value="sport">Deporte
+            <input type="checkbox" name="inenterinment" id="inenterinment" value="read">Leer
+        </label>
+
+        <label for="inpassword"> PASSWORD
+            <input type="password" name="pwr" id="pwr">
+        </label>
+
+        <label for="birthday"> FECHA. NAC
+            <input type="date" name="birthday" id="birthday"> 
+        </label>
+
+        <label for="comment">COMENTARIO
+            <textarea name="comment" id="comment"></textarea>
+        </label>
+
+      <input type="button" value="ENVIAR">
+    </main>
+   </form>   
+</body>
+</html>
