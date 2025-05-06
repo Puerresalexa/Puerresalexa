@@ -1,0 +1,14 @@
+
+body {background-color: cadetblue;}
+header {border: 6px dashed rgb(59, 2, 2);background-color: rgb(71, 180, 175);}
+main {border: solid;background-color: rgb(37, 156, 192);}
+footer {border: dotted;background-color: rgb(42, 165, 114);}
+h1 { color: rgb(93, 93, 177);}
+p {color: rgb(43, 90, 90);}
+#ensayo {
+    font-size: 20px; 
+    font-weight: bold;
+}
+#shakira {
+    color:black;
+}
