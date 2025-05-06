@@ -1,0 +1,28 @@
+body {
+    border: rgb(76, 0, 255) dashed 5px;
+    padding: 1rem;
+    }
+    header {
+        border: solid rgb(100, 7, 7) 5px;
+    }
+    nav {border: 1px rgb(48, 48, 185) solid; 
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    ul {list-style: none;
+    }
+    li {background-color: bisque;
+       display: inline; 
+       padding: 1rem;
+    }
+    nav a{
+        text-decoration: none;
+        margin: 1rem;
+    }
+    footer {
+    background: rgb(5, 2, 2);
+    color: white;
+    border: 1px olive solid;
+    }
+    p {text-align: justify;}
