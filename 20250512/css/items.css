@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    background: rgb(33, 33, 85);
+    padding: 1rem;
+}
+section{
+    display: flex;
+    background-color: blueviolet;
+}
+article {
+    background: violet;
+    height: 100px;
+    width: 100px;
+    flex-grow: 1;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article,section {
+    margin: 1rem;
+    border-radius: 1rem;
+    border: solid 3px rgb(94, 31, 31);
+}
+
+.sencillo {flex-grow: 1;}
+.doble {flex-grow: 2;}
+.triple {flex-grow: 3;}

@@ -1,0 +1,33 @@
+section {
+    display: flex;
+    background-color: rgb(97, 27, 25);
+    border: solid;
+}
+article {
+    width: 100px;
+    height: 100px;
+    background: rgb(63, 11, 47);
+}
+section, article {
+    border: solid;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+#izq {
+    justify-content: flex-start;
+}
+#der {
+    justify-content: flex-end;
+}
+#center {
+    justify-content: center;
+}
+#spece {
+    justify-content: space-between;
+}
+#around {
+    justify-content: space-around;
+}
+#evenly {
+    justify-content: space-evenly;
+}

@@ -1,0 +1,39 @@
+main {
+    background: rgb(38, 38, 71);
+    padding: 1rem;
+}
+section, article {
+    border: solid white;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+section {
+    background: rgb(75, 31, 75);
+    display: flex;
+    height: 300px;
+}
+article {
+    background: rgb(151, 62, 151);
+    width: 100px;
+    text-align: center;
+}
+.peque {height: 80px;}
+.grande {height: 200px;}
+.mediano {height: 150px;}
+.grandote {height: 250px;}
+
+#s-start {align-items: flex-start;}
+#s-end {align-items: flex-end;}
+#s-center {align-items: center;}
+#s-stretch {align-items: stretch;}
+#s-baseline {align-items: baseline;}
+
+#a-p {font-size: 1rem;}
+#a-g {font-size: 2rem;}
+#a-m {font-size: 3rem;}
+#a-t {font-size: 4rem;}
+
+#s-baseline article {
+    align-content: center;
+    width: 270px;
+}
