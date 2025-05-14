@@ -1,0 +1,11 @@
+main {
+    display: grid;
+    margin: 2rem;
+    border: solid rgb(26, 58, 25);
+}
+#s-two {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#s-three {
+    grid-template-columns: repeat(4, 200px);
+}
