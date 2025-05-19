@@ -1,0 +1,41 @@
+* {box-sizing: border-box; margin: 0;padding: 0;}
+
+main {background: violet;
+padding: 1rem;
+}
+
+section { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,150px);
+    background: white;
+}
+
+article {
+    border-radius: 1rem; margin: 1rem;
+}
+
+#formule {
+    grid-template-columns: repeat(4,1px);
+    grid-template-rows: repeat(4,120px)
+}
+#yes {
+    background: rgba(121, 25, 121, 0.541);
+   grid-area: 1/1/-1/-1;
+   z-index: 0;
+}
+#uno {
+    grid-area: / -3 / 5 / -1;
+    z-index: 0;
+ 
+}
+#dos {
+    background: rgba(153, 205, 50, 0.452);
+    grid-area: 1 / 1 / -1 / -1;
+    margin: 3rem;
+    z-index: 4;
+}
+#tres {
+
+}
+#cuatro
