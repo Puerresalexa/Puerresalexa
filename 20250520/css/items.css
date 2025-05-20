@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box; margin: 0; padding: 0;
+}
+main {
+    background: rgb(63, 63, 139);
+    padding: 2rem;
+}
+
+#hero{
+    display: grid;
+    grid-template-columns: 2rem 1fr 150px 150px 200px 100px 40px 2rem;
+    grid-template-rows: 2rem 1rem 100px 78px 140px 1rem 2rem;
+    border: solid 3px rgb(71, 8, 71);
+    background: white;
+}
+#hero img {
+    grid-area: 2 / 3 / -2 / -2;
+}
+#hero article { 
+    grid-area: 1 / 1 / -1 / -1;
+    border: solid rgb(73, 168, 180) 2px;
+    border-radius: 1rem;
+    margin: 1rem;
+    background: rgb(76, 92, 8);
+ }
+
+#hero h2 {
+    grid-area: 3 / 2 / 4 / 4;
+    background-color: rgb(61, 10, 10);
+    z-index: 2;
+    text-align: center;
+    color: aliceblue;
+    padding: 2rem;
+    font-size: xx-large;
+    border-radius: 2rem;
+    font-weight: 900;
+ }
