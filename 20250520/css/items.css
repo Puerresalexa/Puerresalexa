@@ -34,4 +34,26 @@ main {
     font-size: xx-large;
     border-radius: 2rem;
     font-weight: 900;
+
+ }
+ #hero p { grid-area: 5 / 2 / 6 / 5;
+       background: rgba(26, 153, 75, 0.596);
+       z-index: 2;
+       border-radius: 2rem;
+       padding: 2rem;
+       font-size: 1,3rem;
+}
+ #hero a {
+    grid-area: 5 / -4 / 6 / -3;
+    text-decoration: none;
+    color: aliceblue;
+    background: blueviolet;
+    border-radius: 1rem;
+    height: 45px;
+    padding: 1rem;
+    align-self: self-end;
+ }
+ #hero a:hover {
+    background: rgb(59, 8, 70);
+    color: aqua;
  }
