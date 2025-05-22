@@ -15,56 +15,55 @@ article {
     border-radius: 1rem; margin: 1rem;
 }
 
-#uno {
-    background: rgba(255, 0, 0, 0.397);
-    grid-area: 1 / 1 / 3 / 3;
-    z-index: 2;
+
+#hero{
+    display: grid;
+    grid-template-columns: 2rem 1fr 150px 150px 200px 100px 40px 2rem;
+    grid-template-rows: 2rem 1rem 100px 78px 140px 1rem 2rem;
+    border: solid 3px rgb(71, 8, 71);
+    background: white;
 }
-#dos {
-    background: rgba(0, 0, 255, 0.301);
-    grid-area: 2 / 2 / 4 / 4;
-    z-index: 1;
+#hero img {
+    grid-area: 2 / 3 / -2 / -2;
 }
-#tres {
-    background: rgba(128, 0, 128, 0.288);
-    grid-area: 3 / -3 / 5 / -1;
-    z-index: 0;
-}
-#cuatro {
-    background: rgba(153, 205, 50, 0.452);
+#hero article { 
     grid-area: 1 / 1 / -1 / -1;
-    margin: 3rem;
-    z-index: 4;
-}
-#formule {
-    grid-template-columns: repeat(4,1px);
-    grid-template-rows: repeat(4,120px)
-}
-#yes {
-    background: rgba(121, 25, 121, 0.541);
-   grid-area: 1/1/-1/-1;
-   z-index: 0;
-}
-#uno- {
-    grid-area: -4/ -3 / 2 / 5;
-    z-index: 0;
-    padding: 1rem;
-    width: 500px;
+    border: solid rgb(73, 168, 180) 2px;
     border-radius: 1rem;
+    margin: 1rem;
+    background: rgb(76, 92, 8);
+ }
 
- 
+#hero h2 {
+    grid-area: 3 / 2 / 4 / 4;
+    background-color: rgb(61, 10, 10);
+    z-index: 2;
+    text-align: center;
+    color: aliceblue;
+    padding: 2rem;
+    font-size: xx-large;
+    border-radius: 2rem;
+    font-weight: 900;
+
+ }
+ #hero p { grid-area: 5 / 2 / 6 / 5;
+       background: rgba(26, 153, 75, 0.596);
+       z-index: 2;
+       border-radius: 2rem;
+       padding: 2rem;
+       font-size: 1,3rem;
 }
-#dos- {
-    background: rgba(153, 205, 50, 0.452);
-    grid-area: 2 / 3 / -3 / 3;
-    z-index: 1;
+ #hero a {
+    grid-area: 5 / -4 / 6 / -3;
+    text-decoration: none;
+    color: aliceblue;
+    background: blueviolet;
+    border-radius: 1rem;
+    height: 45px;
     padding: 1rem;
-    width: 300px;
-}
-#tres- {
-    background: rgba(0, 0, 255, 0.363);
-    grid-area: 3/2/-3/-2;
-    z-index: 1;
-
-}
-#cuatro-
+    align-self: self-end;
+ }
+ #hero a:hover {
+    background: rgb(59, 8, 70);
+    color: aqua;
+ }
