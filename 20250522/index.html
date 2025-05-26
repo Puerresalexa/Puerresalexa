@@ -3,38 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRID REFERENCE</title>
+    <title>index</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <img src="../imagen/descarga.jpg" alt="">
+        <img src="../imagen/css..jpg" alt="logo">
         <h1>CSS GRID REFERENCE</h1>
     </header>
 
     <nav>
         <ul>
             <li></li>
-            <li> <a href="">INICIO</a></li>
-            <li> <a href="">PRODUCTOS</a></li>
-            <li> <a href="">BLOG</a></li>
-            <li> <a href="">ACERCA DE</a></li>
-            <li> <a href="">CONTACTO</a></li>
+            <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">MAS IMF...</a></li>
+            <li><a href="../20250514/grid.html">GRID-TEMPLATE</a></li>
+            <li><a href="../20250515/sandbox.html">TEMPLATE AREAS</a></li>
+            <li><a href="../20250519/layers.html">CO-GAP,ROW Y GAP</a></li>
+            <li><a href="../20250521/sample.html">JUS-CONTENT-GRID</a></li>
         </ul>
     </nav>
     <main>
-        <h2>CONTENIDO</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo minima eveniet, labore animi exercitationem voluptas expedita tenetur ab esse. ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, perferendis!</p>
+        <section class="one">
+        <article>
+            <img src="../imagen/template-columns-rows-01 (1).svg" alt="">
+        <h2>Grid Template Columns y Grid Template Rows</h2>
+        <p>En CSS Grid, grid-template-columns y grid-template-rows son propiedades que te permiten definir la estructura de la cuadrícula.</p>
+        <h3>Grid Template Columns</h3>
+        <p>grid-template-columns define el número y el tamaño de las columnas en la cuadrícula. Puedes especificar el tamaño de cada columna utilizando diferentes unidades, como píxeles, porcentajes o fracciones.</p>
+        </article>
         
-        <h2>CONTENIDO</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quas architecto qui ducimus tempora fuga, porro vel doloremque doloribus cupiditate.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, autem?</p>
+        <article>
+        <h2>Grid Template Áreas</h2>
+        <p>grid-template-areas es una propiedad de CSS Grid que te permite definir áreas de la cuadrícula y asignarles nombres específicos. Esto te permite crear diseños complejos y personalizados de manera más intuitiva y fácil de entender.</p>
+        <h3>Definicion de arreas</h3>
+        <p>Puedes definir áreas de la cuadrícula utilizando la propiedad grid-template-areas y asignarles nombres específicos.</p>
+        <img src="../imagen/dddgrid-template-areas.svg" alt="">
+        </article>
+        </section>  
+        
+        <section>
+        <article class="img_left" >
+            <img src="../imagen/dddgrid-gap.svg" alt="" class="iman">
+          <article class="tex">
+            <h2>Column Gap, Row Gap y Gap</h2>
+            <p>En CSS Grid, column-gap, row-gap y gap son propiedades que te permiten controlar el espacio entre las columnas y filas de una cuadrícula.</p>
+            <h3>column-gap</h3>
+            <p>column-gap define el espacio entre las columnas de una cuadrícula. Puedes especificar el tamaño del espacio utilizando diferentes unidades, como píxeles o porcentajes.</p>
+            <h3>Row Gap</h3>
+            <p>row-gap define el espacio entre las filas de una cuadrícula. Al igual que con column-gap, puedes especificar el tamaño del espacio utilizando diferentes unidades</p>
+            <h3>Gap</h3>
+            <p>gap es una propiedad abreviada que te permite definir el espacio entre las columnas y filas de una cuadrícula al mismo tiempo. Puedes especificar un solo valor para aplicar el mismo espacio a columnas y filas, o dos valores para especificar espacios diferentes para columnas y filas.</p>
+           </article>
+        </article>
+        
+        <article class="img_right">
+            <img src="../imagen/justify content grid.png" alt="">
+          <article class="tex2">
+            <h2>justify-content en grid</h2>
+            <p>justify-content es una propiedad de CSS Grid que te permite controlar la alineación horizontal de los elementos dentro de una cuadrícula.</p>
+            <h3>Valores de Justify-Content</h3>
+            <h4 start:></h4>  <p>Alinea los elementos al inicio de la cuadrícula.</p>
+            <h4>end:</h4>  <p>Alinea los elementos al final de la cuadrícula.</p> 
+            <h4>center:</h4>  <p>Alinea los elementos en el centro de la cuadrícula.</p> 
+            <h4>space-between:</h4> <p>Distribuye los elementos de manera uniforme en la cuadrícula, con el primer elemento al inicio y el último elemento al final.</p> 
+            <h4>space-around:</h4> <p>Distribuye los elementos de manera uniforme en la cuadrícula, con espacios iguales alrededor de cada elemento.</p> 
+            <h4>space-evenly:</h4>  <p>Distribuye los elementos de manera uniforme en la cuadrícula, con espacios iguales entre cada elemento.</p> 
+          </article>
+        </article>
+    </section>
 
+    <section class="one">
+        <article>
+        <h2>Grid Área</h2>
+        <p>En CSS Grid, una "grid área" se refiere a una región específica dentro de una cuadrícula que puede contener uno o varios elementos. Una grid área se define utilizando la propiedad grid-template-areas y se puede asignar a un elemento utilizando la propiedad grid-area.</p>
+        <h3>grid-area Definicion</h3>
+        <p>Una grid área se define como una región rectangular dentro de una cuadrícula que puede abarcar una o varias filas y columnas. Puedes definir una grid área utilizando la propiedad grid-template-areas y asignarle un nombre específico.</p>
+        </article>
+        
+        <article>
+        <h2>Grid Column</h2>
+        <p>grid-column define la posición y el tamaño de un elemento en la dirección de las columnas de la cuadrícula. Puedes especificar la columna inicial y final utilizando la sintaxis grid-column:inicio y final </p>
+        <h2>Grid Row</h2>
+        <p>grid-row define la posición y el tamaño de un elemento en la dirección de las filas de la cuadrícula. Puedes especificar la fila inicial y final utilizando la sintaxis grid-row: inicio y final</p>
+        </article>
+    </section>  
     </main>
     <aside>
-        <h2>ASIDE</h2>
+        <h2>CSS GRID</h2>
+        <p>Es un sistema de diseño de cuadrículas en CSS que permite crear diseños complejos y flexibles para sitios web. Con CSS Grid, puedes definir una cuadrícula de filas y columnas y colocar elementos dentro de ella, lo que te da un control preciso sobre la disposición y el tamaño de los elementos en tu página web.
+
+        <h3>Características clave de CSS Grid</h3>
+
+<h4>Cuadrícula flexible:</h4>  CSS Grid te permite crear cuadrículas que se adaptan automáticamente al tamaño de la pantalla y al contenido.
+<h4>Fácil de usar:</h4>  CSS Grid es relativamente fácil de aprender y usar, especialmente si ya tienes experiencia con CSS.
+<h4>Diseños complejos:</h4>  CSS Grid te permite crear diseños complejos y personalizados que serían difíciles de lograr con otros métodos de diseño.
+<h4>Compatibilidad:</h4>  CSS Grid es compatible con la mayoría de los navegadores modernos, lo que significa que puedes usarlo en tus proyectos sin preocuparte por la compatibilidad.
+
+<h3>Ventajas de usar CSS Grid</h3>
+
+<h4>Mayor control:</h4>  CSS Grid te da un control preciso sobre la disposición y el tamaño de los elementos en tu página web.
+<h4>Flexibilidad:</h4>  CSS Grid te permite crear diseños que se adaptan automáticamente al tamaño de la pantalla y al contenido.
+<h4>Mejora la experiencia del usuario:</h4>  CSS Grid te permite crear diseños que son fáciles de navegar y entender, lo que mejora la experiencia del usuario.</p>
+<img src="../imagen/grid grid.jpeg" alt="" class="peque">
     </aside>
     <footer>
-        <p>&copy;ALEXANDRA PUERRES - MAYO 2025ALE&reg;</p>
+        <p>&copy;ALEXANDRA PUERRES - May 2025 ale&reg;</p>
     </footer>
 </body>
 </html>
