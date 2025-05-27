@@ -52,17 +52,17 @@ section { border: dotted rgb(0, 238, 255);
         padding: 1rem;
         background: rgb(96, 95, 160); 
         margin: 5px;
-         
+article {
+    background-color: rgb(46, 201, 201);
+    margin: 1rem;
+    border-radius: 1rem;
+}        
 }
 .one {
     display: grid; grid-template-columns: 1fr 1fr;
 }
 
-article {
-    background-color: rgb(46, 201, 201);
-    margin: 1rem;
-    border-radius: 1rem;
-}
+
 
 .img_left {
     display: grid;

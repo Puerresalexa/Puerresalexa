@@ -1,0 +1,31 @@
+main {
+    background: rgba(238, 130, 238, 0.507);
+    width: 1000px;
+    border: rgb(88, 65, 88) solid;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 2rem;
+}
+ @media screen and (max-width: 800px){ 
+    main {
+         background: rgb(62, 62, 150);
+         border: dotted rgb(29, 29, 126);
+         font-size: 1,2rem;
+     
+         width: 750px;
+    }   
+ } 
+    
+ @media screen and (max-width: 450px){
+    main{
+        background: purple;
+        border: dashed black;
+        font-size: 0.8rem;
+        width: unset;
+        margin: unset;
+        
+    }
+    
+ } 
+    
+ 
