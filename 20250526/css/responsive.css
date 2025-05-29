@@ -1,0 +1,30 @@
+main {
+    background: rgb(0, 255, 242);
+    width: 1000px;
+    border: rgb(145, 255, 0) 3px solid;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 800px ) {
+    main {
+        background: rgb(128, 15, 0);
+        border: rgb(119, 0, 255) dotted;
+        font-size: 1.2rem;
+        color: white;
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        background: rgb(0, 81, 255);
+        border: dashed rgb(55, 55, 189);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 0.5rem;
+        width: unset;
+        margin: unset;
+        color: black;
+    }
+}
