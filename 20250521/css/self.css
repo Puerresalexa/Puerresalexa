@@ -19,6 +19,59 @@ article {
     height: 50px;
     background: rgb(18, 86, 131);
 }
+header {
+    grid-column: 1 / -1;
+    display: grid; grid-template-rows: 110px;
+    grid-template-columns: 2fr 4fr;
+    color: aliceblue;
+    background:linear-gradient(45deg,rgb(0, 0, 0), rgb(33, 128, 156));
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+}
+    
+
+header img { 
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+    width: 120px;
+    height: 95px;
+}
+header h1 { align-self: center; }
+
+nav {
+    grid-column: 1 / -1;
+    background: rgb(185, 220, 240);
+  
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5,190px) 1fr;
+    list-style: none;
+}
+
+nav a {
+    display: grid;
+    border: solid rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+nav a:hover {
+    background: darkred;
+    color: white;
+}
+footer { 
+    
+    height: 80px; 
+    padding: 2rem;
+    background: rgba(43, 13, 68, 0.753);
+    text-align: center;
+}
 
 #art_1 { justify-self: start; align-self: start; width: 80px;}
 #art_2 { justify-self: center;}
