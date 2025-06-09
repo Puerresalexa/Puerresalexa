@@ -1,117 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Mrs+Saint+Delafield&family=Shadows+Into+Light&display=swap');
 * { 
     box-sizing: border-box; margin: 0; padding: 0;
-    box-sizing: border-box;
     text-transform: capitalize;
     text-decoration: none;
     list-style: none;
 }
 body {
-    background: rgb(7, 24, 37);
+    
+    background: linear-gradient(to left, rgb(70, 68, 68),rgb(0, 0, 0));
+    background-image: url(../../imagen/fondomain.avif);
+    
 }
 header {
-    background-image: url(../../imagenp/fondo\ whatsapp.jpeg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
+  background-image: url(../../imagen/Gemini_Generated_Image_p5gtwp5gtwp5gtwp.png);
+  background-size: cover;
+  min-height: 10vh;
+}
+
+    
+
+header img { 
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+    width: 300px;
+}
+header h1 { align-self: center; }
+header img {
+    width: 300px;
+    display: grid;
+    align-self: center;
+    justify-content: start;
+    
+    
+}
+
+nav{
+    background-image: url(../../imagen/Gemini_Ge.png);
     background-size: cover;
-    min-height: 50vh;
-    display: flex;
-    align-items: center; 
-}
-aside {
-    width: 20%;
-    background: #577380;
-    color: aliceblue;
-}
-article{
-
-    max-width: 11000px;
-    margin: 0 auto;
+    min-height: 5vh;
+    
 }
 
-.menu {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo {
-    width: 10%;
-    font-family: fantasy;
-    
-}
-.label {
-    cursor: pointer;
-    
-}
-.menu .logo {
-    font-weight: 700;
-    font-size: 25px;
-    color: aliceblue;
-}
-.menu nav ul li {
-    position: relative;
-    float: left; 
-}
-.menu nav ul li a {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 18px;
-    padding: 20px;
-    color: aliceblue;
-    display: block;
-}
-.menu nav ul li a:hover {
-    color: #2177b1;
-}
-
-.fra {
-    
-    display: flex;
-    padding: 4rem; 
-      
-}
-.fra img {
-    width: 20%;
-    
-}
-.fra1 {
-    padding: 150px 150px 0px 0px;
-   
-}
-.fra1 h2 {
-    color: aliceblue;
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: 55px;
+nav ul {
     display: grid;
-    justify-content: center;
+    grid-template-columns: 1fr repeat(5,190px) 1fr;
+    list-style: none;
     
 }
-.fra1 p {
-    margin-top: 15px;
-    color: #577380;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 40px;
+
+nav a {
     display: grid;
-    justify-content: center;  
+    text-decoration: none;
+    text-align: center;
+    font-family: cursive;
+    padding: .5rem 1rem;
+    color: white;
+}
+ 
+nav a:hover {
+    font-family: cursive;
+    color: rgb(92, 24, 24);
 }
 
+.conter {
+    display: flex;
+    
+}
+aside { 
+    width: 400px;
+    box-sizing: border-box; 
+    background: linear-gradient(to left, rgb(70, 68, 68),rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    margin: 0;
+    background-attachment: fixed; 
+    border: #f3f3f3 solid;  
+}
 main {
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    padding: 1rem;
+}
+
+.formspree{
+    color: white;
+    width: 400px;
+    padding: 1rem;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.formspree h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+}
+.boton {
+    width: 100%;
+    background: rgb(49, 41, 41);
+    border: 0;
+    border-radius: 25px;
+    color: white;
+    font-family: fantasy;
+    padding: 1rem;
+}
+.boton:hover {
+    background: rgb(31, 7, 7);
+}
+
+
+
+input {
+    width: 350px;
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+}
+button{
+    background: palevioletred;
+    padding: 1opx 15px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+.vinilos {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f3f3f3;
+    font-size: 30px;
+    width: 12px;
+    padding: 2rem;
 }
 .card {
+
     position: relative;
     width: 300px;
     height: 350px;
     margin: 20px;
+    margin-bottom: 4rem;
 }
 .card .face {
     position: absolute;
@@ -176,10 +214,523 @@ main {
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
-footer {
+
+.img {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+}
+
+.borde1 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 440px;
+    height: 600px;
+    
+}
+.borde1 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+
+}
+.borde1 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 100%;
-    background: #2177b1;
-    padding: 4rem;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde1 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde2 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 400px;
+    height: 465px;
+    
+}
+.borde2 img{
+    width: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde2 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 25px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde2 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde3 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 400px;
+    height: 380px;   
+}
+.borde3 img{
+    width: 350px;
+    height: 250px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+    
+}
+.borde3 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 25px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde3 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde4 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 420px;
+    height: 580px;
+    margin-top: -150px;
+}
+.borde4 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+    
+}
+.borde4 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde4 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde5 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 420px;
+    height: 800px;
+    margin-top: -60px;
+    
+}
+.borde5 img{
+    width: 390px;
+    height: 550px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+    
+}
+.borde5 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde5 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde6 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 400px;
+    height: 550px;
+    
+}
+.borde6 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde6 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde6 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde7 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 430px;
+    height: 600px;
+    
+}
+.borde7 img{
+    width: 400px;
+    height: 450px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;    
+}
+.borde7 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde7 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde8 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 430px;
+    height: 650px;
+    margin-top: -190px;
+    
+}
+.borde8 img{
+    width: 380px;
+    height: 450px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+    
+}
+.borde8 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde8 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde9 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 400px;
+    height: 600px;
+    
+}
+.borde9 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde9 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde9 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde10 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 400px;
+    height: 500px;
+    margin-top: -130px;
+    
+}
+.borde10 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde10 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde10 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde10 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 400px;
+    height: 500px;
+    margin-top: -130px;
+    
+}
+.borde10 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde10 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde10 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde10 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 400px;
+    height: 500px;
+    margin-top: -130px;
+    
+}
+.borde10 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde10 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde10 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde11 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 400px;
+    height: 600px;
+    
+}
+.borde11 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde11 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde11 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde12 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 420px;
+    height: 600px;
+    margin-top: -230px;
+    
+}
+.borde12 img{
+    width: 360px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde12 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde12 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde13 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 420px;
+    height: 550px;
+   
+    
+}
+.borde13 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde13 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde13 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde14 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 420px;
+    height: 500px;
+    margin-top: -240px;
+    
+}
+.borde14 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde14 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde14 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+.borde15 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 400px;
+    height: 580px;
+    
+    
+}
+.borde15 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde15 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6b1616;
+    margin-bottom: 1rem;
+}
+.borde15 p {
+    margin-bottom: 1rem;
+    font-family: "Merienda", cursive;
+}
+.borde15 a{
+    font-size: 26px;
+}
+.borde16 {
+    border: #6b1616;
+    border-radius: 12px;
+    padding: 1rem;
+    background: gray;
+    width: 440px;
+    height: 990px;
+    margin-top: -300px;
+}
+.borde16 img{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.borde16 h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 20px;
+    text-align: center;
+    color: #6b1616;
+    
+}
+.borde16 p {
+    margin-bottom: 3rem;
+    font-family: "Merienda", cursive;
+}
+footer {
+    
+    width: 101%;
+    padding: 2rem;
+    background: #2b0505;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Mrs Saint Delafield", cursive;
 }

@@ -1,179 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Mrs+Saint+Delafield&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Mrs+Saint+Delafield&family=Rye&family=Shadows+Into+Light&display=swap');
 * { 
     box-sizing: border-box; margin: 0; padding: 0;
-    box-sizing: border-box;
     text-transform: capitalize;
     text-decoration: none;
     list-style: none;
 }
 body {
-    background: rgb(7, 24, 37);
+    
+    background: linear-gradient(to left, rgb(70, 68, 68),rgb(0, 0, 0));
+    background-image: url(../../imagen/fondomain.avif);
+    
 }
 header {
-    background-image: url(../../imagenp/fondo.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 50vh;
-    display: flex;
-    align-items: center; 
-}
-article{
-
-    max-width: 11000px;
-    margin: 0 auto;
+  background-image: url(../../imagen/Gemini_Generated_Image_p5gtwp5gtwp5gtwp.png);
+  background-size: cover;
+  min-height: 10vh;
 }
 
-.menu {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo {
-    width: 15px;
-    font-family: cursive;
-}
-.label {
-    cursor: pointer;
     
-}
-.menu .logo {
-    font-weight: 700;
-    font-size: 25px;
-    color: aliceblue;
-}
-.menu nav ul li {
-    position: relative;
-    float: left; 
-}
-.menu nav ul li a {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 18px;
-    padding: 20px;
-    color: aliceblue;
-    display: block;
-}
-.menu nav ul li a:hover {
-    color: #2177b1;
-}
 
-.fra {
-    
-    display: flex;
-    padding: 4rem; 
-      
-}
-.fra img {
-    width: 20%;
-    
-}
-.fra1 {
-    padding: 150px 150px 0px 0px;
-   
-}
-.fra1 h2 {
-    color: aliceblue;
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: 55px;
-    display: grid;
-    justify-content: center;
-    
-}
-.fra1 p {
-    margin-top: 15px;
-    color: #577380;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 40px;
-    display: grid;
-    justify-content: center;  
-}
-
-main {
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-.card {
-    position: relative;
+header img { 
+    width: 100px;
+    align-self: center;
+    justify-self: center;
     width: 300px;
-    height: 350px;
-    margin: 20px;
 }
-.card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s;
-}
-.card .front{
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #0eaef3; 
-}
-.card .front img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.card .face h2 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: aliceblue;
-    background: rgb(0,0,0,.4);
-    text-align: start;  
+header h1 { align-self: center; }
+header img {
+    width: 300px;
+    display: grid;
+    align-self: center;
+    justify-content: start;
+    
+    
 }
 
-.card .back {
-    transform: perspective(600px) rotateY(180deg);
-    background: rgb(6, 26, 44);
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+nav{
+    background-image: url(../../imagen/Gemini_Ge.png);
+    background-size: cover;
+    min-height: 5vh;
+    
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5,190px) 1fr;
+    list-style: none;
+    
+}
+
+nav a {
+    display: grid;
+    text-decoration: none;
     text-align: center;
-    box-shadow: 0 5px 10px #000;
+    font-family: cursive;
+    padding: .5rem 1rem;
+    color: white;
 }
-.card .back .link {
-    border-top: solid 1px white;
-    height: 50px;
-    line-height: 50px;
+ 
+nav a:hover {
+    font-family: cursive;
+    color: rgb(92, 24, 24);
 }
-.card .back .link a {
-    color: #f3f3f3;
+
+.conter {
+    display: flex;
+    
 }
-.card .back h2 {
-    font-size: 30px;
-    margin-top: 20px;
-    letter-spacing: 2px;
+aside {
+    order: 2; 
+    width: 400px;
+    box-sizing: border-box; 
+    background: rgba(14, 28, 46, 0.336);
+    margin: 0;
+    background-attachment: fixed; 
+    justify-self: center;
 }
-.card .back  {
-    letter-spacing: 1px;
+main {
+    order: 1;
+    flex: 1;
+    padding: 1rem;
 }
-.card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
+
+.formspree{
+    color: white;
+    width: 400px;
+    padding: 1rem;
+    margin-top: 10px;
+    border-radius: 4px;
 }
-.card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
+.formspree h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+}
+.boton {
+    width: 100%;
+    background: rgb(49, 41, 41);
+    border: 0;
+    border-radius: 25px;
+    color: white;
+    font-family: fantasy;
+    padding: 1rem;
+}
+.boton:hover {
+    background: rgb(31, 7, 7);
+}
+
+
+
+input {
+    width: 350px;
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+}
+button{
+    background: palevioletred;
+    padding: 1opx 15px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+section h1 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.sabias {
+    color: brown;
+    border: white solid;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    padding: 1rem 1rem;
+}
+.sabias h1 {
+    font-size: 20px;
+    color: orangered;
+}
+.sabias img{
+     width: 300px;
+     height: 300px;
+     display: block;
+     margin: auto;
+}
+.sabias h2 {
+    margin-bottom: 1rem;
+}
+.img {
+    color: aliceblue;
+}
+.img img {
+    width: 100%;
+    margin-top: 2rem;
+}
+.img h3 {
+    margin-top: 1rem;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Rye", serif;
+}
+.img h4{
+    margin-bottom: 1rem;
+    font-size: 25px;
+    color: orange;
+}
+.img h5 {
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.img p{
+    font-size: 16px;
+}
+.histo{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+.histo img {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+.histo histo2{
+    flex: 1;
+}
+.histo p{
+    margin-bottom: 1rem;
+
+}
+.histo a{
+    font-size: 20px;
+    color: violet;
+    margin-bottom: 1rem;
+}
+.histori{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.histori img {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+.histori p {
+    margin-bottom: 1rem;
+}
+.histori a {
+    font-size: 20px;
+    color: violet;
+    margin-bottom: 1rem;
 }
 footer {
+    
+    width: 101%;
+    padding: 2rem;
+    background: #2b0505;
+    color: white;
+    font-size: 30px;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 100%;
-    background: #2177b1;
-    padding: 4rem;
+    font-family: "Mrs Saint Delafield", cursive;
 }

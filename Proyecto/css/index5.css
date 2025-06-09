@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Mrs+Saint+Delafield&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Mrs+Saint+Delafield&family=Rye&family=Shadows+Into+Light&display=swap');
+* { 
+    box-sizing: border-box; margin: 0; padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    
+    background: linear-gradient(to left, rgb(70, 68, 68),rgb(0, 0, 0));
+    background-image: url(../../imagen/fondomain.avif);
+    
+}
+header {
+  background-image: url(../../imagen/Gemini_Generated_Image_p5gtwp5gtwp5gtwp.png);
+  background-size: cover;
+  min-height: 10vh;
+}
+
+    
+
+header img { 
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+    width: 300px;
+}
+header h1 { align-self: center; }
+header img {
+    width: 300px;
+    display: grid;
+    align-self: center;
+    justify-content: start;
+    
+    
+}
+
+nav{
+    background-image: url(../../imagen/Gemini_Ge.png);
+    background-size: cover;
+    min-height: 5vh;
+    
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5,190px) 1fr;
+    list-style: none;
+    
+}
+
+nav a {
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+    font-family: cursive;
+    padding: .5rem 1rem;
+    color: white;
+}
+ 
+nav a:hover {
+    font-family: cursive;
+    color: rgb(92, 24, 24);
+}
+
+main {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+.final {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+}
+.final h1{
+    margin: 0;
+    padding-left: 20px;
+    color: blue;
+    font-size: 1.8em;
+}
+.container {
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 0 20px; 
+}
+
+.final1 {
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px;
+}
+.finaal2 li{
+    color: #555; 
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.final3 {
+    font-size: 20px;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(66, 3, 3, 0.1);
+}
+
+.final3 h3 {
+    color: #000;
+    font-size: 1.2em;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #0c6c79; 
+    text-transform: uppercase;
+}
+
+.final3 ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.final3 li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #2c1058; 
+}
+.imagenes {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    margin-top: 30px; 
+}
+.imagen {
+    background-color: #333; 
+    color: #fff; 
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    display: flex; 
+    flex-direction: column; 
+    transition: transform 0.2s ease-in-out; 
+}
+.tex{
+    width: 100%;
+    height: 180px; /* Altura fija para las imágenes pequeñas, ajusta según sea necesario */
+    object-fit: cover; /* Recorta la imagen para que cubra el espacio sin distorsionarse */
+    display: block;
+    padding: 15px;
+}
+.tex h3 {
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff; /* Texto blanco en el título */
+    line-height: 1.4;
+}
+footer {
+    
+    width: 101%;
+    padding: 2rem;
+    background: #2b0505;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Mrs Saint Delafield", cursive;
+}
+
+
